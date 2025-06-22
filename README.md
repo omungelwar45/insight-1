@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# TechCorp Data Engineering Challenge
 
-## Project info
+This project provides a web-based platform for harmonizing insights across various datasets. It leverages a modern frontend built using **React (TypeScript + Vite)**, backend data handling through **SQLite**, and interactive data exploration in **Jupyter Notebooks**.
 
-**URL**: https://lovable.dev/projects/c82803ea-9535-4d18-b1ed-ba345614d1b8
+## 📂 Project Structure (starter)
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c82803ea-9535-4d18-b1ed-ba345614d1b8) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+insight-harmonization-hub/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── database/
+│   └── insights.db         # SQLite database (sample seeded)
+├── notebooks/
+│   └── analysis.ipynb      # Starter notebook
+├── index.html
+├── package.json
+├── bun.lockb
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## 🛠  Quick Start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Install dependencies**
 
-**Use GitHub Codespaces**
+```bash
+bun install   # or npm install / yarn install
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+2. **Run dev server**
 
-## What technologies are used for this project?
+```bash
+bun run dev   # or npm run dev
+```
 
-This project is built with:
+3. **Launch Jupyter**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+cd notebooks
+jupyter notebook
+```
 
-## How can I deploy this project?
+4. **Explore the database**
 
-Simply open [Lovable](https://lovable.dev/projects/c82803ea-9535-4d18-b1ed-ba345614d1b8) and click on Share -> Publish.
+```bash
+sqlite3 database/insights.db
+sqlite> .tables
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 📊 Notebook preview
 
-Yes, you can!
+The starter notebook demonstrates:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* Connecting to `insights.db`
+* Loading tables with `pandas`
+* Calculating simple aggregates
+* Plotting with `matplotlib`
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📑 License
+
+MIT
+![image](https://github.com/user-attachments/assets/89711765-845f-40c8-90ca-925d0163033f)
+![image](https://github.com/user-attachments/assets/d8e86720-9231-4dc2-a99f-ca50a8ef42ca)
+![image](https://github.com/user-attachments/assets/3adf1c99-049a-48ce-9f82-f8a9521283d6)
+![image](https://github.com/user-attachments/assets/d1087e14-48ef-4f39-a4d0-7cc8e09e1463)
+
